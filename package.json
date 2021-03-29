@@ -2,6 +2,8 @@
   "name": "main",
   "version": "1.0.0",
   "description": "",
+  "main": "server.js",
+  "type": "module",
   "engines": {
     "node": "14.x",
     "npm": "6.x"
@@ -11,10 +13,19 @@
     "setup": "npm install --prefix client && npm install --prefix server",    
     "client": "npm start --prefix client",
     "server": "nodemon server/server",
-    "dev": "concurrently -n 'server,client' -c 'blue,green' \"npm run server\" \"npm run client\""
+    "dev": "concurrently -n 'server,client' -c 'blue,green' \"npm run server \" \"npm run client\""
   },
   "dependencies": {
     "concurrently": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
