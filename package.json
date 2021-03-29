@@ -2,15 +2,19 @@
   "name": "main",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "scripts": {
-    "setup": "npm run setup-client && npm run setup-server",
-    "setup-client": "cd client && npm install",
-    "setup-server": "cd server && npm install",
-    "client": "cd client && npm start",
-    "server": "cd server && npm start",
+    "start": "node server/server",
+    "setup": "npm install --prefix client && npm install --prefix server",    
+    "client": "npm start --prefix client",
+    "server": "nodemon server/server",
     "dev": "concurrently -n 'server,client' -c 'blue,green' \"npm run server\" \"npm run client\""
   },
   "dependencies": {
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
   }
 }

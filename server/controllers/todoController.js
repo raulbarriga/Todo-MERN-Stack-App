@@ -12,23 +12,6 @@ export const getTodos = async (req, res) => {
   }
 };
 
-// export const getTodo = async (req, res) => {
-//   const { id } = req.params;
-
-//   //check if the id is a valid mongoose id
-//   if (!mongoose.Types.ObjectId.isValid(id))
-//     return res.status(404).send(`No post with id: ${id}`);
-
-//   try {
-//     const todo = await Todo.findById(id);
-
-//     //if everything works, we return status 200
-//     res.status(200).json(todo);
-//   } catch (error) {
-//     res.status(404).json({ message: error.message });
-//   }
-// };
-
 export const createTodo = async (req, res) => {
   const todo = req.body; // the whole todo
 

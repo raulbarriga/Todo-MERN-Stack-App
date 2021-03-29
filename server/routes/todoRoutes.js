@@ -1,7 +1,6 @@
 import express from 'express'
 
 import { getTodos,
-    // getTodo,
     createTodo,
     editTodo,
     deleteTodo } from '../controllers/todoController.js'
@@ -13,7 +12,6 @@ router.route('/')
     .post(createTodo);
 
 router.route('/:id')
-    // .get(getTodo)
     .patch(editTodo)
     .delete(deleteTodo);
 
