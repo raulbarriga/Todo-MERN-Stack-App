@@ -8,7 +8,6 @@ import todoRoutes from './routes/todoRoutes.js';
 dotenv.config();
 connectDB();
 
-const hostname = "localhost";
 const PORT = process.env.PORT || 8000;
 const app = express();
 app.use(morgan("dev"));
@@ -24,6 +23,6 @@ app.use((req, res) => {
   res.end("<html><body><h1>This is an Express Server</h1></body></html>");
 });
 
-app.listen(PORT, hostname, () => {
-  console.log(`Server running at http://${hostname}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running at on port:${PORT}`);
 });
