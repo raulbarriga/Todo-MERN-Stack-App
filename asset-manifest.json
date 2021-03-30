@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Todo-MERN-Stack-App/static/css/main.706ba80f.chunk.css",
+    "main.js": "/Todo-MERN-Stack-App/static/js/main.dedd7520.chunk.js",
+    "main.js.map": "/Todo-MERN-Stack-App/static/js/main.dedd7520.chunk.js.map",
+    "runtime-main.js": "/Todo-MERN-Stack-App/static/js/runtime-main.cf392f42.js",
+    "runtime-main.js.map": "/Todo-MERN-Stack-App/static/js/runtime-main.cf392f42.js.map",
+    "static/js/2.0bd3cc8e.chunk.js": "/Todo-MERN-Stack-App/static/js/2.0bd3cc8e.chunk.js",
+    "static/js/2.0bd3cc8e.chunk.js.map": "/Todo-MERN-Stack-App/static/js/2.0bd3cc8e.chunk.js.map",
+    "index.html": "/Todo-MERN-Stack-App/index.html",
+    "static/css/main.706ba80f.chunk.css.map": "/Todo-MERN-Stack-App/static/css/main.706ba80f.chunk.css.map",
+    "static/js/2.0bd3cc8e.chunk.js.LICENSE.txt": "/Todo-MERN-Stack-App/static/js/2.0bd3cc8e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf392f42.js",
+    "static/js/2.0bd3cc8e.chunk.js",
+    "static/css/main.706ba80f.chunk.css",
+    "static/js/main.dedd7520.chunk.js"
+  ]
+}
