@@ -9,3 +9,5 @@ You'll need to set up your own .env file on the server folder that'll contain th
 The you can start the whole app, both the client and the server folders, also with one command in a terminal window: `npm run dev`. The server info will be in blue and the client info will be in green.
 
 Now you'll see the project open up in your browser.
+
+## Here's the demo version: [demo](https://www.raulbarriga.com/Todo-MERN-Stack-App/)
