@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9cc734b8;
+
+  #root {
+    .app-wrapper {
+      margin: 0 auto;
+      width: 480px;
+      border-radius: 8px;
+      padding: 24px;
+      overflow: auto;
+      background-color: yellow;
+
+      header {
+        margin-bottom: 12px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .add-task {
+        position: relative;
+        input {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid black;
+          margin-right: 12px;
+          background-color: transparent;
+          padding: 0 4px;
+          color: black;
+          width: calc(100% - 60px);
+        }
+
+        button {
+          border-radius: 50%;
+          cursor: pointer;
+          outline: none;
+          width: 36px;
+          height: 36px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      .all-tasks {
+        margin: 16px 0;
+
+        .task {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .checkbox-btn,
+          .edit-btn,
+          .delete-btn {
+            cursor: pointer;
+            padding: 7px;
+            border-radius: 2px;
+            border: none;
+            background-color: blue;
+            color: white;
+            margin: 3px;
+          }
+        }
+      }
+    }
+  }
+}
