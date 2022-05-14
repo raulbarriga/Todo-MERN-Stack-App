@@ -3,7 +3,7 @@ import axios from "axios";
 // development server url
 const url = "http://localhost:8000/api/todos";
 // // heroku server url
-// const url = "https://todo-mern-apprentice-app.herokuapp.com/api/todos";
+// const url = process.env.PRODUCTION_URL;
 
 export const getTodos = async () => {
   try {

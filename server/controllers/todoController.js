@@ -5,7 +5,6 @@ export const getTodos = async (req, res) => {
   try {
     const todos = await Todo.find();
 
-    //if everything works, we return status 200
     res.status(200).json(todos);
   } catch (error) {
     res.status(404).json({ message: error.message });
