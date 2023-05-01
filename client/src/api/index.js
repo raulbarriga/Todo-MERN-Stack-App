@@ -3,7 +3,7 @@ import axios from "axios";
 // development server url
 // const url = "http://localhost:8000/api/todos";
 // // render server url
-const urlTodos = process.env.PRODUCTION_URL + "/api/todos";
+const urlTodos = process.env.REACT_APP_PRODUCTION_URL + "/api/todos";
 
 export const getTodos = async () => {
   try {
