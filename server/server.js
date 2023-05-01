@@ -1,15 +1,8 @@
-import express from "express";
-import morgan from "morgan";
-import dotenv from "dotenv";
-import cors from "cors";
-import connectDB from "./config/db.js";
 import todoRoutes from './routes/todoRoutes.js';
+import cors from "cors";
+import morgan from "morgan";
+import app from "./server.js";
 
-dotenv.config();
-connectDB();
-
-const PORT = process.env.PORT || 8000;
-const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(cors());
@@ -17,12 +10,8 @@ app.use(cors());
 app.use("/api/todos", todoRoutes);
 
 app.use((req, res) => {
-  console.log(req.headers);
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/html");
-  res.end("<html><body><h1>This is an Express Server</h1></body></html>");
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port: ${PORT}`);
-});
+    console.log(req.headers);
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    res.end("<html><body><h1>This is an Express Server</h1></body></html>");
+  });
