@@ -1,6 +1,8 @@
-import todoRoutes from './routes/todoRoutes.js';
+import express from "express";
 import cors from "cors";
 import morgan from "morgan";
+
+import todoRoutes from './routes/todoRoutes.js';
 import app from "./app.js";
 
 app.use(morgan("dev"));
