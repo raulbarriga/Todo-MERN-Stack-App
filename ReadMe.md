@@ -12,4 +12,4 @@ Now you'll see the project open up in your browser.
 
 I deployed the backend to Heroku and the frontend to Github pages.
 
-## Here's the demo version: [demo](https://www.raulbarriga.com/Todo-MERN-Stack-App/)
+## Here's the demo version: [demo](https://todo-mern-app-client.onrender.com)
