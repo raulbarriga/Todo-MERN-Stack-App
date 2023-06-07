@@ -4,7 +4,7 @@ import Task from "./Task";
 const AllTasks = ({ todos, deleteTodo, updateTodo }) => {
   return (
     <div className="all-tasks">
-      {console.log(todos)}
+      {/* {console.log(todos)} */}
       {todos.map((todo) => (
         <Task 
         todo={todo} 

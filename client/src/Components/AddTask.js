@@ -8,7 +8,7 @@ const AddTask = ({ saveTodo }) => {
 
   const handleForm = (e) => {
     setNewTodo({ ...newTodo, todo: e.target.value });
-    console.log(newTodo);
+    // console.log(newTodo);
   };
 
   return (

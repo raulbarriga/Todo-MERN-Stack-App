@@ -23,6 +23,7 @@ body {
 
       .add-task {
         position: relative;
+        
         input {
           border: none;
           outline: none;
@@ -54,6 +55,29 @@ body {
           justify-content: space-between;
           align-items: center;
 
+          .name-and-checkbox {
+            display: flex;
+
+            span {
+              text-decoration: none;
+              cursor: pointer;
+              width: 22rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          form {
+            flex-grow: 1;
+            margin-right: 9px;
+
+            input {
+              width: 100%;
+              padding: 5px 0;
+            }
+          }
+
           .checkbox-btn,
           .edit-btn,
           .delete-btn {
@@ -63,7 +87,7 @@ body {
             border: none;
             background-color: blue;
             color: white;
-            margin: 3px;
+            margin: 0 3px;
           }
         }
       }
