@@ -47,7 +47,7 @@ const Task = ({ todo, deleteTodo, updateTodo }) => {
     }
 
     return (
-      <span className="name-and-checkbox">
+      <div className="name-and-checkbox">
         <input
           type="checkbox"
           className="checkbox-btn"
@@ -77,24 +77,25 @@ const Task = ({ todo, deleteTodo, updateTodo }) => {
                   };
             updateTodo(_id, toggleCheckbox);
           }}
+          title={name}
         >
           {name}
         </span>
-      </span>
+      </div>
     );
   };
 
   const renderBtns = () => {
     if (editing) {
       return (
-        <span className="btns">
+        <div className="btns">
           <button className="edit-btn" onClick={onSaveClick}>
             Save
           </button>
           <button className="delete-btn" onClick={onCancelClick}>
             Cancel
           </button>
-        </span>
+        </div>
       );
     }
 
