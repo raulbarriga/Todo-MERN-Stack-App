@@ -13,3 +13,5 @@ Now you'll see the project open up in your browser.
 I deployed the backend to Heroku and the frontend to Github pages.
 
 ## Here's the demo version: [demo](https://todo-mern-app-client.onrender.com)
+
+**Note:** the web app will take a little bit to load when first going to the url. Same for when posting a new todo since I deployed the backend separately & is also affected by the platform's slow load due to free tier. This lag only last once, but afterwards the app performs at normal speeds.
